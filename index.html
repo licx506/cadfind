@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAD资源查询系统</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CAD资源查询系统</h1>
+            <p>根据关键字查找对应的CAD图纸资源</p>
+        </header>
+        
+        <div class="search-section">
+            <input type="text" id="keyword" placeholder="输入关键字搜索...">
+            <button id="search-btn">搜索</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>搜索结果</h2>
+            <div id="search-status"></div>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>文件名</th>
+                        <th>行号</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <!-- 搜索结果将在这里动态添加 -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="preview-section">
+            <h2>文件预览</h2>
+            <div id="preview-container">
+                <p id="preview-placeholder">选择文件进行预览</p>
+                <!-- 如果有预览功能，将在这里显示 -->
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
